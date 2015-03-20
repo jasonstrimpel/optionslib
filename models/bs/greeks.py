@@ -54,7 +54,7 @@ def put_delta(s, k, r, q, t, vol):
 def underlying_delta():
     """ Black-Scholes underlying delta
 
-    :return: BS call option value
+    :return: underlying delta
     """
     return 1.0
 

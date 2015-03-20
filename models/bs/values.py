@@ -1,7 +1,6 @@
 from scipy.stats import norm
 from math import sqrt, pi
 import numpy as np
-np.set_printoptions(precision=8, suppress=True)
 
 
 def N(x):
@@ -37,7 +36,7 @@ def call_value(s, k, r, q, t, vol):
     return s * np.exp(-q * t) * N(d1) - k * np.exp(-r * t) * \
                                         N(d1 - vol * np.sqrt(t))
 
-
+										
 def put_value(s, k, r, q, t, vol):
     """ Black-Scholes put option
 
